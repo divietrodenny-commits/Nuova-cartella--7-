@@ -1,9 +1,12 @@
-export default function AppHeader(){
+import { NavLink } from "react-router-dom";
+import menu from "./menu";
+
+export default function AppHeader() {
 
 
-    return(
-        <>
-        
-        </>
+    return (
+        <header>
+            {menu.map(item => <NavLink to={item.path} key={item.id}> {item.text}</NavLink>)}
+        </header>
     )
 }
