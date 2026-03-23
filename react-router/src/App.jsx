@@ -3,6 +3,7 @@ import AppHeader from "./Components/AppHeader";
 import Home from "./Components/Home";
 import Products from "./Components/Products";
 import About from "./Components/About";
+import DefaultLayout from "./Components/DefaultLayout";
 
 function App() {
   return (
