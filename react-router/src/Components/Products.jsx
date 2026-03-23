@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom"
 
 export default function Products() {
     const [products, setProducts] = useState([]);
@@ -37,13 +38,19 @@ export default function Products() {
                                     width: '100%',
                                     objectFit: 'contain',
                                     objectPosition: 'center'
-                                }}
-                            />
+                                }} />
+                          
                             <div className="card-body">
                                 <h6 className="card-title fw-bold">{product.title}</h6>
                                 <p className="card-text text-muted small mb-3">{product.category}</p>
                                 <p className="h5 fw-bold text-primary mb-3">${product.price}</p>
+                                <NavLink
+                                    to={`/products/${product.id}`}
+                                    className="btn btn-primary w-100">
+                                    Dettagli
+                                </NavLink>
                             </div>
+
                         </div>
                     </div>
                 ))}
