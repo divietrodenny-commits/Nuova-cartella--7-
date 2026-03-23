@@ -20,4 +20,4 @@ export default function SingleProduct() {
 
     console.log('SingleProduct ID:', id);
 
-    
+}
