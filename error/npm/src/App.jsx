@@ -1,8 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Components/Home";
-import About from "./Components/about";
-import Products from "./Components/products";
+import About from "./Components/About";
+import Products from "./Components/Products";
 import DefaultLayout from "./Components/DefaultLayout";
+
 
 function App() {
   return (
